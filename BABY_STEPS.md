@@ -16,5 +16,6 @@ three listed before.
 ### Tasks ###
 
 1.  Create a free gmail account for the bot
-2.  Write the first piece of code that uses [mikel's mail gem](http://github.com/mikel/mail) to send a test email from the script
-3.  Write test code that checks the inbox for new email
+2.  Learn how to setup a proper directory structure for a Ruby Project & do that.
+3.  Write the first piece of code that uses [mikel's mail gem](http://github.com/mikel/mail) to send a test email from the script
+4.  Write test code that checks the inbox for new email
