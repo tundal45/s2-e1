@@ -8,6 +8,10 @@ GEM
       treetop (>= 1.4.5)
     mime-types (1.16)
     polyglot (0.3.1)
+    ruby-gmail (0.2.1)
+      mail (>= 2.2.1)
+      shared-mime-info
+    shared-mime-info (0.1)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
 
@@ -15,4 +19,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mail
+  ruby-gmail

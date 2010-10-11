@@ -1,3 +1,4 @@
 source 'http://rubygems.org'
 
-gem 'mail'
+# gem 'mail'
+gem 'ruby-gmail'
