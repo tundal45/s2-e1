@@ -2,8 +2,8 @@ require 'mail'
 
 options = { :address              => "smtp.gmail.com",
             :port                 => 587,
-            :user_name            => 'rmu.rapportive.clone@gmail.com',
-            :password             => 'whereswaldo',
+            :user_name            => 'rmu.rapportive.bot@gmail.com',
+            :password             => 'kh0jyakh0jai',
             :authentication       => 'plain',
             :enable_starttls_auto => true }
 
@@ -30,5 +30,6 @@ def validate_presence_of(recipient)
   end
 end
 
-send_mail :subject => "One more time",
-          :body => "This is an email"
+send_mail :to => "rmu.rapportive.bot@gmail.com",
+          :subject => "One more time",
+          :body => "tundal45@gmail.com twitter facebook linkedin github nonexistent blah blah blah"
