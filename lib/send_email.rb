@@ -11,20 +11,24 @@ Mail.defaults do
   delivery_method :smtp, options
 end
 
-def send_email(options = {})
-  begin
-    mail         = Mail.new
-    mail.to      = options.fetch(:to)
-    mail.from    = options.fetch(:from, 'rmu.rapportive.clone@gmail.com')
-    mail.subject = options.fetch(:subject, "")
-    mail.body    = options.fetch(:body, "")
-    mail.deliver!
-  rescue KeyError => e
-    puts "You must specify who you want to send the email to in order to send an email"
-    puts e.message
-    puts e.backtrace.inspect
-  rescue ArgumentError => e
-    puts e.message
-    p e.backtrace
+MissingRecipientError = Class.new(StandardError)
+
+def send_mail(options = {})
+  recipient    = options.fetch(:to, nil)
+  validate_presence_of(recipient)
+  mail         = Mail.new
+  mail.to      = recipient  
+  mail.from    = options.fetch(:from, 'rmu.rapportive.clone@gmail.com')
+  mail.subject = options.fetch(:subject, "")
+  mail.body    = options.fetch(:body, "")
+  mail.deliver!
+end
+
+def validate_presence_of(recipient)
+  unless recipient 
+    raise MissingRecipientError, "You need a recipient to send an email"
   end
 end
+
+send_mail :subject => "One more time",
+          :body => "This is an email"
