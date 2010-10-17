@@ -2,16 +2,14 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.0)
+    json (1.4.6)
     mail (2.2.7)
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    nokogiri (1.4.3.1)
     polyglot (0.3.1)
-    ruby-gmail (0.2.1)
-      mail (>= 2.2.1)
-      shared-mime-info
-    shared-mime-info (0.1)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
 
@@ -19,4 +17,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ruby-gmail
+  json
+  mail
+  nokogiri

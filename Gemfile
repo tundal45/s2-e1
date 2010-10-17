@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
 
-# gem 'mail'
-gem 'ruby-gmail'
+gem 'mail'
+gem 'nokogiri'
+gem 'json'

@@ -20,8 +20,8 @@ three listed before.
 3.  <strike>Write the first piece of code that uses [mikel's mail gem](http://github.com/mikel/mail) to send a test email from the script.</strike>
 4.  <strike>Write code that checks the inbox for new email</strike>
 5.  <strike>Write a basic method to parse the email body for required information (in my case, all I am looking for is email and maybe name of the social networks to search in as optional arguments)</strike>
-6.  Write a method that parses the result of the API call (initially assume the API exists to get the other moving parts working)
-7.  Write a method that composes an email using the parsed data.
-8.  Design the API to use Template Method pattern where there is a generic search and specific search of user within each Social Network using their individual API
-9.  Call the generic API with this information
+6.  <strike>Write a method that parses the result of the API call.</strike>
+7.  <strike>Write a method that composes an email using the parsed data.</strike>
+8.  <strike>Design the API to use Template Method pattern where there is a generic search and specific search of user within each Social Network using their individual API</strike>
+9.  <strike>Call the generic API with this information</strike>
 10. Clean up the implementation and make it modular
