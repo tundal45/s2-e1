@@ -17,10 +17,6 @@ module RMURapportiveBot
     
     def self.respond_to_request(message, response)
       validate_presence_of(message.from)
-      puts message.from
-      puts message.to
-      puts message.subject
-      puts response
       Mail.deliver do
         to      message.from
         from    message.to
